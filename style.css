@@ -1,0 +1,810 @@
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styling */
+ul.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+ul.navbar li {
+    margin: 0;
+}
+
+ul.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul.navbar a:hover {
+    color: #f0a500;
+}
+
+ul.navbar .Logo {
+    background-image: url("images/logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 140px;
+    text-indent: -9999px;
+}
+
+
+
+h1.PYE {
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+p.PYE {
+    font-size: 14px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+section.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+section.title .title-image {
+    background-image: url("images/protest.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+section.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.formlink {
+    background-image: url("images/leadership.jpg");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    position: relative; 
+    width: 500px;      
+    height: 300px;
+    background-color: #f8f9fa; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin: 20px;      
+}
+
+div.formlink:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+div.formlink a {
+    position: relative; 
+    z-index: 2;
+    color: white;       
+    text-decoration: none;
+    font-size: 36px;  
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;      
+    padding: 15px;
+    transition: color 0.3s ease; 
+}
+
+div.formlink a:hover {
+    color: #f0a500; 
+}
+
+div.formlink::before {
+    content: "";          
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+section.Actiontop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.Actiontop div.Actiontitle{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    margin-top: 40px;
+    margin-bottom: 0px;
+
+}
+
+
+/* Action Section */
+/* Action Section */
+section.Action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+section.Action div {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+section.Action div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+section.Action div.officials,
+section.Action div.fundraising,
+section.Action div.awarness {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.Action div.officials {
+    background-image: url("images/pexels-pierre-blache-651604-3369102.JPG");
+}
+
+section.Action div.fundraising {
+    background-image: url("images/money.JPG");
+}
+
+section.Action div.awarness {
+    background-image: url("images/protest2.jpg");
+}
+
+
+section.Action div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Text Styling */
+section.Action div a {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+    transition: color 0.3s ease;
+}
+
+section.Action div a:hover {
+    color: #f0a500; /* Add subtle hover effect */
+}
+
+
+/* Footer Styling */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: black;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: black;
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section.title {
+        flex-direction: column;
+    }
+
+    section.title .title-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    section.Action {
+        flex-direction: column;
+    }
+
+    section.Action div {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+
+/* General Footer Styling */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Section Styling */
+footer .footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer .footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f00000;
+}
+
+footer .footer-section p,
+footer .footer-section ul,
+footer .footer-section a {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-section ul li a:hover {
+    color: #f0a500;
+}
+
+/* Social Media Icons */
+footer .social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Bottom Styling */
+footer .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    font-size: 12px;
+    color: #ccc;
+}
+
+footer .footer-bottom a {
+    color: #f0a500;
+    text-decoration: none;
+}
+
+footer .footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    font-style: italic;
+}
+
+.title-officials {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.explain-officials {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.everything {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.national, .virginia, .fairfax {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+/* Fundraising page*/
+
+.fundraising-page {
+    text-align: center;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fundraising-page h1, 
+.fundraising-page h2, 
+.fundraising-page h3 {
+    color: #333;
+}
+
+.gaza-dis {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    color: #555;
+}
+
+.donate-button-wrapper {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.donate-button {
+    display: inline-block;
+    background: #e63946;
+    color: #fff;
+    padding: 0.8em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.donate-button:hover {
+    background: #d62828;
+}
+
+/* Spreading Awarness*/
+
+p.educating{
+    text-align: center;
+}
+
+div.educating{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: rgb(255, 255, 255);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+ul.campeigns{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+ul.campeigns li{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ul.campeigns li h2{
+    text-align: center;
+}
+
+/* Boycotting */
+
+div.Boycotting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+div.Boycotting a{
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    font-weight: 900;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: popAnimation 0.5s ease-in-out;
+    text-align: center;
+    max-width: 600px;
+
+}
+
+div.Boycotting a:hover{
+    background: rgb(36, 36, 39);
+    color: #f0a500;
+    transform: scale(1.1);
+}
+
+div.Boycotting p{
+    text-align: center;
+}
+
+div.Boycotting li{
+    list-style: none;
+    text-align: center;
+}
+
+
+div.main-targets-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main-targets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.maintargets {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.maintargets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.maintargets div.mcdonalds, 
+div.maintargets div.shakeshack {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 250px;
+    border: 1px solid black;
+    height: 200px;
+}
+
+div.maintargets div.shakeshack {
+    background-image: url("images/shakeshack.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 25px;
+}
+
+
+div.maintargets div.mcdonalds{
+    background-image: url("images/mcdonalds.jpg");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 25px;
+}
+
+div.bds-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+}
+
+div.buttonbds {
+    display: inline-block; /* Makes the div behave like a button */
+    padding: 10px 20px; /* Adds space inside the button */
+    background-color: #000000; /* Button background color */
+    color: white; /* Text color */
+    border: 1px solid #000000; /* Border to match the background */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centers text inside the button */
+    cursor: pointer; /* Changes cursor to pointer when hovering */
+    font-size: 16px; /* Adjusts font size */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: popAnimation 0.5s ease-in-out;
+}
+
+div.buttonbds a:hover {
+    color: f0a500;
+}
+
+div.buttonbds:hover{
+    transform: scale(1.1);
+}
+
+div.buttonbds a{
+    text-decoration: none;
+    color: white;
+}
+
+/*contact form*/
+
+/* Create a wrapper to center the form */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full height of the viewport */
+    margin: 0;
+}
+
+/* Container for the form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Form field labels */
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Form input fields */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Textarea field */
+form textarea {
+    resize: vertical;
+}
+
+/* Button styling */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Success and error messages */
+.alert {
+    font-size: 14px;
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Error messages */
+.alert.error {
+    color: red;
+}
+
+/* Create a wrapper to center the content */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 40px; /* Space between the two columns */
+}
+
+/* Style the form container */
+.content form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-height: 350px;
+}
+
+/* Style the side content */
+.side-content {
+    width: 300px; /* Space for content next to the form */
+    text-align: center;
+}
+
+.side-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.side-content p {
+    font-size: 16px;
+}
